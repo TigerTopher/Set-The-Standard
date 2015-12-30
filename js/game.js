@@ -1,9 +1,11 @@
 // Create the canvas
-var canvas = document.createElement("canvas");
+window.requestAnimationFrame=function(){
+		return window.requestAnimationFrame ||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.msRequestAnimationFrame||window.oRequestAnimationFrame||function(f){window.setTimeout(f,1e3/60)}}();
+
+var canvas = document.querySelector('canvas');
 var ctx = canvas.getContext("2d");
 canvas.width = 512;
-canvas.height = 480;
-document.body.appendChild(canvas);
+canvas.height =480;
 
 // Background image
 var bgReady = false;

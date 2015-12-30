@@ -461,3 +461,16 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+#tellmemore a{
+    outline: 0;
+    color: #FFF;  
+}
+
+#tellmemore a:hover,
+#tellmemore a:focus,
+#tellmemore a:active,
+#tellmemore a.active {
+    outline: 0;
+    color: #2c3e50;
+}

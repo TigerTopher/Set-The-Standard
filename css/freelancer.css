@@ -184,7 +184,11 @@ section.success {
     background: #18bc9c;
 }
 
-section.success a,
+section.success a{
+    outline: 0;
+    color: #FFF;  
+}
+
 section.success a:hover,
 section.success a:focus,
 section.success a:active,
